@@ -29,6 +29,26 @@ Support custom referrer pattern:
       ]
     });
 
+Display a welcome message to searchers:
+
+    $("body").highlightSearchTerms({
+      titleContainer: ".welcome-searchers"
+    });
+
+    <style>
+    div.welcome-searchers {
+        display:none;
+        border:1px solid #ccc;
+        background-color:#ffc;
+        padding:10px;
+        font-weight:700;
+    }
+    </style>
+
+    <div class="welcome-searchers">
+        Thanks for visiting! We've highlighted your search terms: &quot;<span class="referring-search-terms"></span>&quot;
+    </div>
+
 LICENSE
 =======
 
